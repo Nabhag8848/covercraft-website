@@ -6,5 +6,6 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
+    <div className='h-[100vh]'></div>
   </React.StrictMode>,
 )
