@@ -1,4 +1,3 @@
-import "./App.css";
 import { SpotlightPreview } from "./components/ui/spotlight";
 
 function App() {
