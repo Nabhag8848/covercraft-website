@@ -1,11 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+import NavBar from "./components/NavBar.tsx";
+import Footer from "./components/Footer.tsx";
+import LexicaFeature from "./components/LexicaFeature.tsx";
+import ThemeFeature from "./components/ThemeFeature.tsx";
+import { SpotlightPreview } from "./components/spotlight.tsx";
+
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-    <div className='h-[100vh]'></div>
-  </React.StrictMode>,
-)
+    <NavBar />
+    <SpotlightPreview />
+    <LexicaFeature />
+    <ThemeFeature />
+    <Footer />
+  </React.StrictMode>
+);

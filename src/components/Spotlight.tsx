@@ -1,4 +1,5 @@
-import { cn } from "../../../utils/cn";
+import { cn } from "../../utils/cn";
+import NavBar from "./NavBar";
 
 type SpotlightProps = {
   className?: string;
@@ -56,15 +57,41 @@ const Spotlight = ({ className, fill }: SpotlightProps) => {
 
 export function SpotlightPreview() {
   return (
-    <div className="h-[100vh] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight className="left-0 -top-40 md:left-96 md:-top-0" fill="white" />
       <div className="relative z-10 w-full p-4 pt-20 pb-20 mx-auto max-w-7xl">
+        <div
+          onClick={() => {
+            const url = "https://github.com/Nabhag8848/hashnode-figma-plugin";
+            window.open(url, "_blank");
+          }}
+          className="flex flex-row items-center justify-center w-auto hover:scale-[1.025] transition-all duration-300 cursor-pointer"
+        >
+          <p className="px-4 py-[4px] mx-auto text-white text-opacity-80 border border-white border-opacity-60 rounded-full flex flex-row items-center justify-center text-[12px]">
+            <GithubLogo />
+            <div className="w-2"></div>
+            Proudly OpenSource
+            <svg
+              width="20"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.5 5L15.5 12L8.5 19"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </p>
+        </div>
         <h1 className="pb-6 text-4xl font-bold text-center text-transparent bg-opacity-50 md:text-7xl bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
           Seamlessly <br /> Set Cover Images
           <br /> from{" "}
-          <strong className="inline-block">
-            Figma to Hashnode
-          </strong>
+          <strong className="inline-block">Figma to Hashnode</strong>
         </h1>
         <p className="max-w-lg mx-auto mt-6 text-base font-normal text-center text-neutral-300 ">
           Say Goodbye to downloads, naming and Effortlessly craft <br />
@@ -136,6 +163,16 @@ const TwitterLogo = () => {
           fill="white"
         />
       </svg>
+    </>
+  );
+};
+
+const GithubLogo = () => {
+  return (
+    <>
+      <div className="max-h-[20px] max-w-[15px]">
+        <img src="/github-mark-white.png" alt="" />
+      </div>
     </>
   );
 };

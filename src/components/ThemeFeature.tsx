@@ -1,0 +1,30 @@
+import bgImg from "/ss_dark.png";
+import lightImg from "/ss_light.png";
+
+const ThemeFeature = () => {
+  return (
+    <>
+      <div className="h-[80vh] relative flex flex-col justify-center items-end text-white mx-20">
+        <h1 className="text-4xl font-bold w-[30vw]">
+          Experience Flexibility with Our Figma Plugin
+        </h1>
+        <h2 className="text-xl w-[30vw] text-white opacity-80 mt-4">
+          Supporting Both Light and Dark Modes, We Adapt to Your Preferred
+          Design Environment.
+        </h2>
+        <img
+          className="h-[60vh] absolute top-0  left-[5%] shadow-lg rounded-md"
+          src={lightImg}
+          alt=""
+        />
+        <img
+          className="h-[60vh] absolute  left-[25%] shadow-lg rounded-md"
+          src={bgImg}
+          alt=""
+        />
+      </div>
+    </>
+  );
+};
+
+export default ThemeFeature;
