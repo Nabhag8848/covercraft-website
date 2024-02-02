@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar.tsx";
 import Footer from "./components/Footer.tsx";
 import LexicaFeature from "./components/LexicaFeature.tsx";
 import ThemeFeature from "./components/ThemeFeature.tsx";
-import { SpotlightPreview } from "./components/spotlight.tsx";
+import { SpotlightPreview } from "./components/Spotlight.tsx";
 
 import "./index.css";
 
