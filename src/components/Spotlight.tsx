@@ -1,5 +1,4 @@
 import { cn } from "../../utils/cn";
-import NavBar from "./NavBar";
 
 type SpotlightProps = {
   className?: string;
