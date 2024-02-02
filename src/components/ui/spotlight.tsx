@@ -1,4 +1,5 @@
 import { cn } from "../../../utils/cn";
+import NavBar from "./NavBar";
 
 type SpotlightProps = {
   className?: string;
@@ -56,7 +57,8 @@ const Spotlight = ({ className, fill }: SpotlightProps) => {
 
 export function SpotlightPreview() {
   return (
-    <div className="h-[100vh] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="h-[80vh] w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <NavBar/>
       <Spotlight className="left-0 -top-40 md:left-96 md:-top-0" fill="white" />
       <div className="relative z-10 w-full p-4 pt-20 pb-20 mx-auto max-w-7xl">
         <h1 className="pb-6 text-4xl font-bold text-center text-transparent bg-opacity-50 md:text-7xl bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
