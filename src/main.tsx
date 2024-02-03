@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import NavBar from "./components/NavBar.tsx";
 import Footer from "./components/Footer.tsx";
 import LexicaFeature from "./components/LexicaFeature.tsx";
 import ThemeFeature from "./components/ThemeFeature.tsx";
