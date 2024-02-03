@@ -1,8 +1,8 @@
 const NavBar = () => {
   return (
-    <div className="h-[8vh] fixed top-0 w-full flex items-center p-2 z-10 pr-20 pl-4">
+    <div className="h-[8vh] fixed top-0 w-full items-center p-2 z-10 pr-20 pl-4">
       <Logo />
-      <p className="ml-2 text-xl text-white">CoverCraft</p>
+      <p className="ml-2 text-white text-md md:text-xl">CoverCraft</p>
     </div>
   );
 };
@@ -11,8 +11,7 @@ const Logo = () => {
   return (
     <>
       <svg
-        width="60"
-        height="60"
+      className="w-[30px] h-[30px]  md:w-[60px] md:h-[60px]"
         viewBox="0 0 475 475"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

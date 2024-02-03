@@ -3,9 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Declare Color variables */
 html,
 body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   font-family: "Poppins";
   padding: 0px;
   margin: 0px;
