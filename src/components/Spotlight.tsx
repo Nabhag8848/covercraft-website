@@ -61,7 +61,7 @@ export function SpotlightPreview() {
       <div className="relative z-10 w-full p-4 pt-20 pb-20 mx-auto max-w-7xl">
         <div
           onClick={() => {
-            const url = "https://github.com/Nabhag8848/hashnode-figma-plugin";
+            const url = "https://github.com/Nabhag8848/CoverCraft";
             window.open(url, "_blank");
           }}
           className="flex flex-row items-center justify-center w-auto hover:scale-[1.025] transition-all duration-300 cursor-pointer"
@@ -98,11 +98,38 @@ export function SpotlightPreview() {
         </p>
         <div className="h-8"></div>
         <div className="flex flex-row items-center justify-center gap-4">
-          <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 flex flex-row items-center justify-center gap-4">
+          <button
+            onClick={() => {
+              window.open(
+                "https://www.figma.com/community/plugin/1333733891388229126",
+                "_blank"
+              );
+            }}
+            className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 flex flex-row items-center justify-center gap-4"
+          >
             <FigmaSpotlight />
             Get Plugin
           </button>
-          <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 flex flex-row items-center justify-center gap-4">
+          <button
+            onClick={() => {
+              const tweetMessage =
+                "Check out CoverCraft - @figma x @hashnode by @NabhagMotivaras and @AsterJoules" +
+                "%0a%0a" +
+                "Seamlessly Set Cover Images from Figma to Hashnode." +
+                "%0a" +
+                "Say Goodbye to downloads, naming and Focus on craft Cover Images with zero hassle." +
+                "%0a%0a" +
+                "Website: https://cover-craft.vercel.app/" +
+                "%0a%0a" +
+                "https://www.figma.com/community/plugin/1333733891388229126";
+
+              window.open(
+                `https://twitter.com/intent/tweet?text=${tweetMessage}`,
+                "_blank"
+              );
+            }}
+            className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 flex flex-row items-center justify-center gap-4"
+          >
             <TwitterLogo />
             Share on Twitter
           </button>
